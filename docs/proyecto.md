@@ -78,3 +78,6 @@ Esta versión no contempla una interfaz gráfica completa. El consumo de los ser
 
 ## 7. Diagrama de Arquitectura
 ![Diagrama de Arquitectura](diagrama_arquitectura.png)
+
+## 8. Diagrama de Arquitectura Desacoplada
+![Diagrama de Arquitectura Desacoplada](diagrama_arquitectura_EurekaServer.png)
