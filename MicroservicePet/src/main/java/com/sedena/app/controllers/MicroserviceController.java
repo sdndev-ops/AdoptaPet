@@ -100,8 +100,9 @@ public class MicroserviceController {
 		
 	}
 	
-	
-	@PatchMapping//actualización parcial-> PATCH->http://ip:port/pet?id=id,status=AVAILABLE
+	//PatchMapping solo lo implementa OpenFeign de github (ok feign okhttp)
+	//@PatchMapping//actualización parcial-> PATCH->http://ip:port/pet?id=id,status=AVAILABLE
+	@PutMapping("/status") //Este cambio se realizó para usar Feign de Spring Cloud
 	public ResponseEntity<String> updateAdoptionStatus(
 			@RequestParam("id") long id, 
 			@RequestParam("status") AdoptionStatus status

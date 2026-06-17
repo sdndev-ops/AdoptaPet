@@ -3,6 +3,8 @@ package com.sedena.app.controllers;
 import java.util.List;
 import java.util.NoSuchElementException;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -30,6 +32,7 @@ import com.sedena.app.services.IService;
 @RestController
 @RequestMapping("/adopter")
 public class MicroController {
+	//private static final Logger LOGGER=LoggerFactory.getLogger(MicroController.class);
 	
 	private IService service;
 
@@ -46,7 +49,7 @@ public class MicroController {
 			else
 				return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
 		}catch(Exception e) {
-			
+			//LOGGER.warn("ERROR {}",e);
 			return new ResponseEntity<String>(HttpStatus.INTERNAL_SERVER_ERROR);
 			
 		}
