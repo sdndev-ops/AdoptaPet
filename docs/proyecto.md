@@ -74,3 +74,7 @@ La primera versión del sistema incluirá los siguientes módulos principales:
 9. Despliegue con Docker.
 
 Esta versión no contempla una interfaz gráfica completa. El consumo de los servicios se realizará mediante herramientas como Postman, Insomnia o curl.
+
+
+## 7. Diagrama de Arquitectura
+![Diagrama de Arquitectura](diagrama_arquitectura.png)
